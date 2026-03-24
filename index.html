@@ -1,229 +1,582 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smile Care</title>
+    <meta charset="utf-8">
+    <title>Smile Care García Group | Odontología Especializada</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Template Stylesheet -->
+    <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-flex">
-    <div class="logo">
-      <img src="SMILYCARE.jpg" alt="Smile Care">
-      <span>SMILE CARE</span>
-    </div>
-
-    <ul class="nav-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#testimonios">Testimonios</a></li>
-      <li><a href="#contacto" class="btn-primary">Cita Online</a></li>
-    </ul>
-
-    <div class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-  </div>
-</header>
-
-<!-- HERO -->
-<section id="inicio" class="hero reveal">
-  <div class="container">
-    <h1>Estamos aquí para verte sonreír</h1>
-    <p>En Smile Care Garcia Group, elevamos el estándar de la odontología moderna. Excelencia médica y resultados de nivel mundial, todo en un solo lugar.</p>
-    <a href="#contacto" class="btn-primary big-btn">Agendar Cita</a>
-  </div>
-</section>
-
-<section id="servicios" class="section services">
-  <div class="container">
-    <h2>Servicios Especializados</h2>
-
-    <div class="slider services-slider">
-      <button class="slider-btn prev">❮</button>
-
-      <div class="slides">
-        <div class="slide active">
-          <img src="https://www.teeth22.com/wp-content/uploads/2018/11/cuidar-los-dientes-durante-tratamiento-ortodoncia-1024x511.jpg" alt="">
-          <h3>Ortodoncia</h3>
-          <p>Corrección dental con técnicas modernas para lograr una sonrisa alineada y funcional.</p>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
+    </div>
+    <!-- Spinner End -->
 
-        <div class="slide">
-          <img src="model-tooth-dentist-doctor-shows-patient-tooth-reception-dentist-s-office.jpg" alt="">
-          <h3>Endodoncia</h3>
-          <p>Tratamiento de conductos con tecnología avanzada y mínima molestia.</p>
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+        <div class="container">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Santo Domingo, República Dominicana</a>
+                        <a href="mailto:smilegarciagroup@gmail.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>smilegarciagroup@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex justify-content-end gap-3">
+                        <a class="text-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-primary" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-primary" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="text-primary" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <div class="dropdown ms-3">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> Español</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item">Español</a>
+                                <a href="#" class="dropdown-item">English</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- Topbar End -->
 
-        <div class="slide">
-          <img src="dentist-examining-female-patient-teeth.jpg" alt="">
-          <h3>Periodoncia</h3>
-          <p>Cuidado especializado de encías para prevenir y tratar enfermedades periodontales.</p>
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar px-0 px-lg-4 py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a href="#" class="navbar-brand d-flex align-items-center p-0">
+                    <img src="SMILYCARE.jpg" alt="Logo" class="logo-img">
+                    <h1 class="text-primary mb-0 ms-2" style="font-size: 1.5rem;">Smile Care</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">Nosotros</a></li>
+                        <li class="nav-item"><a href="#service" class="nav-link">Servicios</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#team" class="dropdown-item">Nuestro Equipo</a></li>
+                                <li><a href="#testimonials" class="dropdown-item">Testimonios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                        <li class="nav-item ms-3">
+                            <a href="#contact" class="btn btn-primary rounded-pill px-4">Agendar Cita</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-xl-flex align-items-center ms-4">
+                    <div class="btn btn-light btn-lg-square rounded-circle me-3">
+                        <i class="fa fa-phone-alt fa-2x text-primary"></i>
+                    </div>
+                    <div>
+                        <span class="small text-muted">Ll ámanos</span>
+                        <h6 class="mb-0"><a href="tel:+18095395340" class="text-dark">809-539-5340</a></h6>
+                    </div>
+                </div>
+            </nav>
         </div>
+    </div>
+    <!-- Navbar End -->
 
-        <div class="slide">
-          <img src="nurse-practicing-layout-jaw-with-teeth.jpg" alt="">
-          <h3>Implantes Dentales</h3>
-          <p>Soluciones permanentes para recuperar piezas dentales perdidas.</p>
+    <!-- Hero Start -->
+    <div class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <h5 class="text-primary text-uppercase mb-3 letter-spacing-2">Bienvenidos a Smile Care</h5>
+                    <h1 class="display-1 fw-bold mb-4">Odontología de <span class="text-primary">Excelencia</span></h1>
+                    <p class="lead mb-4">En Smile Care García Group, elevamos el estándar de la odontología moderna con tecnología de vanguardia, atención personalizada y los más altos estándares de calidad.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#about" class="btn btn-primary rounded-pill px-5 py-3">Conócenos</a>
+                        <a href="#contact" class="btn btn-outline-light rounded-pill px-5 py-3">Agendar Cita</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-img">
+                        <img src="equipo.jpg" class="img-fluid rounded-4 shadow-lg" alt="Equipo Smile Care">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <button class="slider-btn next">❯</button>
     </div>
-  </div>
-</section>
+    <!-- Hero End -->
 
-<section id="nosotros" class="section nosotros reveal">
-  <div class="container nosotros-grid">
-
-    <div class="nosotros-img">
-      <img src="Captura de pantalla_4-2-2026_184429_www.instagram.com.jpeg" alt="Dr Aníbal">
+    <!-- About Start -->
+    <div class="container-fluid about py-5" id="about">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img position-relative">
+                        <img src="dr-anibal.jpg" class="img-fluid rounded-4 shadow w-100" alt="Dr. Aníbal García">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="text-primary text-uppercase mb-3">Sobre Nosotros</h5>
+                    <h1 class="display-4 mb-4">Excelencia en Odontología Especializada</h1>
+                    <p class="mb-4">El Dr. Aníbal García es un odontólogo con amplia trayectoria en el área de la odontología integral y rehabilitación oral, reconocido por su enfoque clínico preciso, ético y centrado en el bienestar del paciente.</p>
+                    <p class="mb-4">Cuenta con más de <strong>15 años de experiencia</strong> en práctica privada, integrando tecnología de vanguardia y protocolos internacionales.</p>
+                    <div class="row g-4 mt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary fa-2x me-3"></i>
+                                <span>Doctor en Odontología</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary fa-2x me-3"></i>
+                                <span>Especialista en Rehabilitación Oral</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary fa-2x me-3"></i>
+                                <span>Formación en Implantología</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary fa-2x me-3"></i>
+                                <span>Atención Personalizada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary rounded-pill px-5 py-3 mt-4">Más Información</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- About End -->
 
-    <div class="nosotros-text">
-      <h2>Dr. Aníbal García</h2>
-      <h4>Director Médico · Odontología Especializada</h4>
-
-      <p>
-        El Dr. Aníbal García es un odontólogo con amplia trayectoria en el área de la
-        odontología integral y rehabilitación oral, reconocido por su enfoque clínico
-        preciso, ético y centrado en el bienestar del paciente.
-      </p>
-
-      <p>
-        Cuenta con más de <strong>15 años de experiencia</strong> en práctica privada,
-        integrando tecnología de vanguardia y protocolos internacionales para ofrecer
-        tratamientos seguros, funcionales y estéticamente armoniosos.
-      </p>
-
-      <ul class="nosotros-list">
-        <li>✔Doctor en Odontología</li>
-        <li>✔Especialista en Rehabilitación Oral</li>
-        <li>✔Formación continua en implantología y estética dental</li>
-        <li>✔Atención clínica personalizada y humana</li>
-      </ul>
+    <!-- Counters Start -->
+    <div class="container-fluid counters py-5 bg-light">
+        <div class="container py-4">
+            <div class="row g-4 text-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="counter-box p-4 bg-white rounded-4 shadow-sm">
+                        <h2 class="display-3 fw-bold text-primary counter" data-target="15">15</h2>
+                        <h5 class="mb-0">Años de Experiencia</h5>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="counter-box p-4 bg-white rounded-4 shadow-sm">
+                        <h2 class="display-3 fw-bold text-primary counter" data-target="5000">5000</h2>
+                        <h5 class="mb-0">Sonrisas Transformadas</h5>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="counter-box p-4 bg-white rounded-4 shadow-sm">
+                        <h2 class="display-3 fw-bold text-primary counter" data-target="100">100</h2>
+                        <h5 class="mb-0">Atención Personalizada</h5>
+                        <small>% Satisfacción</small>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="counter-box p-4 bg-white rounded-4 shadow-sm">
+                        <h2 class="display-3 fw-bold text-primary counter" data-target="24">24</h2>
+                        <h5 class="mb-0">Soporte Continuo</h5>
+                        <small>Horas / 7 días</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Counters End -->
 
-  </div>
-</section>
-
-<!-- TESTIMONIOS -->
-<section id="testimonios" class="section testimonials reveal">
-  <div class="container">
-    <h2>Testimonios</h2>
-
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>Atención impecable y resultados increíbles.</p>
-        <span>- Laura M.</span>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>Profesionales de alto nivel, totalmente recomendado.</p>
-        <span>- Carlos R.</span>
-      </div>
-      <div>
-      <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p>Profesionales de alto nivel, totalmente recomendado.</p>
-        <span>- Carlos R.</span>
-      </div>
-      <div>
-
-      </div>
+    <!-- Service Start -->
+    <div class="container-fluid service py-5" id="service">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h5 class="text-primary text-uppercase">Nuestros Servicios</h5>
+                <h1 class="display-4">Tratamientos Especializados</h1>
+                <p class="mt-3">Ofrecemos tratamientos de alta calidad con tecnología avanzada y los más altos estándares de excelencia odontológica.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                        <div class="service-icon mb-4">
+                            <i class="fas fa-teeth-open fa-3x text-primary"></i>
+                        </div>
+                        <h4>Ortodoncia</h4>
+                        <p class="mb-3">Corrección dental con técnicas modernas para lograr una sonrisa alineada y funcional.</p>
+                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Leer más</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                        <div class="service-icon mb-4">
+                            <i class="fas fa-tooth fa-3x text-primary"></i>
+                        </div>
+                        <h4>Endodoncia</h4>
+                        <p class="mb-3">Tratamiento de conductos con tecnología avanzada y mínima molestia.</p>
+                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Leer más</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                        <div class="service-icon mb-4">
+                            <i class="fas fa-teeth fa-3x text-primary"></i>
+                        </div>
+                        <h4>Periodoncia</h4>
+                        <p class="mb-3">Cuidado especializado de encías para prevenir y tratar enfermedades periodontales.</p>
+                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Leer más</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                        <div class="service-icon mb-4">
+                            <i class="fas fa-microscope fa-3x text-primary"></i>
+                        </div>
+                        <h4>Implantes Dentales</h4>
+                        <p class="mb-3">Soluciones permanentes para recuperar piezas dentales perdidas con total naturalidad.</p>
+                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary rounded-pill px-5 py-3">Más Servicios</a>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-<section class="section why-us reveal">
-  <div class="container">
+    <!-- Service End -->
 
-    <div class="why-grid">
-
-      <div class="why-images">
-        <img src="dentist-assistant-with-tool-makes-some-manipulations-patient-s-mouth.jpg" alt="Clínica dental moderna">
-    
-      </div>
-
-      <div class="why-text">
-        <h2>¿Por qué elegir Smile Care?</h2>
-        <p>
-          En Smile Care no solo tratamos dientes, cuidamos personas.
-          Combinamos tecnología avanzada, experiencia clínica y un trato
-          humano que te hace sentir seguro desde el primer momento.
-        </p>
-
-        <ul class="why-list">
-          <li><i class="fas fa-check-circle"></i> Atención personalizada y ética</li>
-          <li><i class="fas fa-check-circle"></i> Tecnología odontológica moderna</li>
-          <li><i class="fas fa-check-circle"></i> Resultados estéticos y funcionales</li>
-          <li><i class="fas fa-check-circle"></i> Más de 15 años de experiencia clínica</li>
-        </ul>
-
-        <a href="#contacto" class="btn-primary">Agenda tu evaluación</a>
-      </div>
-
+    <!-- Team Start -->
+    <div class="container-fluid team py-5 bg-light" id="team">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h5 class="text-primary text-uppercase">Nuestro Equipo</h5>
+                <h1 class="display-4">Conoce a Nuestros Especialistas</h1>
+                <p class="mt-3">Un equipo de profesionales comprometidos con tu salud bucal y bienestar integral.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="team-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="dr-anibal.jpg" class="img-fluid w-100 team-img" alt="Dr. Aníbal García" style="height: 450px; object-fit: cover; object-position: top;">
+                        <div class="p-4 text-center">
+                            <h3>Dr. Aníbal García</h3>
+                            <p class="text-primary fw-bold">Director Médico · Rehabilitación Oral</p>
+                            <p class="mb-3">Más de 15 años de experiencia en odontología integral y rehabilitación oral. Especialista en implantología y estética dental.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-sm btn-primary rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-sm btn-primary rounded-circle"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-sm btn-primary rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-sm btn-primary rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="dr-gabriel.jpg" class="img-fluid w-100 team-img" alt="Dr. Gabriel García" style="height: 450px; object-fit: cover; object-position: top;">
+                        <div class="p-4 text-center">
+                            <h3>Dr. Gabriel García</h3>
+                            <p class="text-primary fw-bold">Especialista en Ortodoncia</p>
+                            <p class="mb-3">Experto en ortodoncia y ortopedia maxilar. Dedicado a crear sonrisas alineadas y funcionales con las técnicas más modernas.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-sm btn-primary rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-sm btn-primary rounded-circle"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-sm btn-primary rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-sm btn-primary rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
+    <!-- Team End -->
 
-
-<!-- CONTACTO -->
-<section id="contacto" class="section contact reveal">
-  <div class="container">
-    <h2>Agenda tu Cita</h2>
-
-    <form>
-      <input type="text" placeholder="Nombre completo">
-      <input type="email" placeholder="Correo electrónico">
-      <input type="tel" placeholder="Teléfono">
-      <textarea placeholder="Mensaje"></textarea>
-      <button class="btn-primary big-btn">Enviar Solicitud</button>
-    </form>
-  </div>
-</section>
-
-<footer class="footer-section">
-  <div class="footer-overlay"></div>
-
-  <div class="container footer-content">
-    <h2>Contáctanos</h2>
-
-    <div class="footer-info">
-      <div class="footer-item">
-        <i class="fas fa-phone-alt"></i>
-        <p><strong>Teléfono</strong><br>809-539-5340</p>
-      </div>
-
-      <div class="footer-item">
-        <i class="fas fa-envelope"></i>
-        <p><strong>Email</strong><br>smilegarciagroup@gmail.com</p>
-      </div>
-
-      <div class="footer-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <p><strong>Ubicación</strong><br>Santo Domingo, República Dominicana</p>
-      </div>
+    <!-- Why Us Start -->
+    <div class="container-fluid why-us py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <img src="ortodoncia.jpg" class="img-fluid rounded-4 shadow w-100" alt="Clínica Smile Care">
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="text-primary text-uppercase mb-3">¿Por qué elegirnos?</h5>
+                    <h1 class="display-4 mb-4">Razones para confiar en Smile Care</h1>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <i class="fas fa-user-md text-primary fa-2x me-3"></i>
+                                <div>
+                                    <h5>Atención Personalizada</h5>
+                                    <p class="mb-0">Tratamientos diseñados específicamente para cada paciente.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <i class="fas fa-microscope text-primary fa-2x me-3"></i>
+                                <div>
+                                    <h5>Tecnología Avanzada</h5>
+                                    <p class="mb-0">Equipos de última generación para diagnósticos precisos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <i class="fas fa-smile text-primary fa-2x me-3"></i>
+                                <div>
+                                    <h5>Resultados Garantizados</h5>
+                                    <p class="mb-0">Más de 15 años de experiencia clínica.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <i class="fas fa-calendar-check text-primary fa-2x me-3"></i>
+                                <div>
+                                    <h5>Compromiso y Confianza</h5>
+                                    <p class="mb-0">Ética profesional y seguimiento continuo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary rounded-pill px-5 py-3 mt-4">Agenda tu evaluación</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Why Us End -->
 
-    <div class="footer-bottom">
-      © 2025 Smile Care García Group · Odontología Especializada
+    <!-- Testimonials Start -->
+    <div class="container-fluid testimonials py-5 bg-light" id="testimonials">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h5 class="text-primary text-uppercase">Testimonios</h5>
+                <h1 class="display-4">Lo que dicen nuestros pacientes</h1>
+                <p class="mt-3">La satisfacción de nuestros pacientes es nuestra mejor recompensa.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card bg-white p-4 rounded-4 shadow-sm h-100">
+                        <div class="d-flex text-warning mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">"Atención impecable y resultados increíbles. Me devolvieron la confianza en mi sonrisa. Totalmente recomendado."</p>
+                        <h5 class="mb-0">Laura M.</h5>
+                        <small class="text-muted">Paciente</small>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card bg-white p-4 rounded-4 shadow-sm h-100">
+                        <div class="d-flex text-warning mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">"Profesionales de alto nivel, tecnología de punta y atención excepcional. El Dr. García es un excelente especialista."</p>
+                        <h5 class="mb-0">Carlos R.</h5>
+                        <small class="text-muted">Paciente</small>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card bg-white p-4 rounded-4 shadow-sm h-100">
+                        <div class="d-flex text-warning mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">"La mejor clínica dental en Santo Domingo. Excelente trato y resultados de primer nivel. Muy agradecida."</p>
+                        <h5 class="mb-0">Mariana F.</h5>
+                        <small class="text-muted">Paciente</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</footer>
+    <!-- Testimonials End -->
 
+    <!-- Contact Start -->
+    <div class="container-fluid contact py-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h5 class="text-primary text-uppercase mb-3">Contáctanos</h5>
+                    <h1 class="display-4 mb-4">Agenda tu Cita</h1>
+                    <p class="mb-4">Déjanos tus datos y nos comunicaremos contigo para agendar tu cita de evaluación.</p>
+                    <div class="mb-4">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-map-marker-alt text-primary fa-2x me-3"></i>
+                            <div>
+                                <h5>Dirección</h5>
+                                <p class="mb-0">Santo Domingo, República Dominicana</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-envelope text-primary fa-2x me-3"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p class="mb-0">smilegarciagroup@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-phone-alt text-primary fa-2x me-3"></i>
+                            <div>
+                                <h5>Teléfono</h5>
+                                <p class="mb-0">809-539-5340</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-4 rounded-4">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Tu Nombre">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Tu Email">
+                                </div>
+                                <div class="col-12">
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Teléfono">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3 rounded-pill">Enviar Solicitud</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
 
-<script src="script.js"></script>
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="text-white mb-4"><i class="fas fa-tooth me-2 text-primary"></i>Smile Care</h3>
+                    <p class="text-white-50">Odontología especializada con más de 15 años de experiencia. Cuidamos tu sonrisa con excelencia y calidez humana.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-primary rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-primary rounded-circle"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-primary rounded-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-primary rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="text-white mb-4">Enlaces Rápidos</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#about" class="text-white-50 d-block mb-2"><i class="fas fa-angle-right me-2"></i>Sobre Nosotros</a>
+                            <a href="#service" class="text-white-50 d-block mb-2"><i class="fas fa-angle-right me-2"></i>Servicios</a>
+                            <a href="#team" class="text-white-50 d-block mb-2"><i class="fas fa-angle-right me-2"></i>Nuestro Equipo</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#testimonials" class="text-white-50 d-block mb-2"><i class="fas fa-angle-right me-2"></i>Testimonios</a>
+                            <a href="#contact" class="text-white-50 d-block mb-2"><i class="fas fa-angle-right me-2"></i>Contacto</a>
+                            <a href="#" class="text-white-50 d-block mb-2"><i class="fas fa-angle-right me-2"></i>Políticas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p class="text-white-50">Suscríbete para recibir promociones y consejos de salud dental.</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tu email">
+                        <button class="btn btn-primary">Suscribir</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="text-white-50 mb-0">© 2025 Smile Care García Group. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        // Spinner
+        setTimeout(function() {
+            document.getElementById('spinner').classList.remove('show');
+        }, 500);
+        
+        // Counter Up
+        function animateCounter(element) {
+            let target = parseInt(element.getAttribute('data-target'));
+            let current = 0;
+            let increment = target / 50;
+            let timer = setInterval(function() {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 30);
+        }
+        
+        // Animar contadores al hacer scroll
+        let countersAnimated = false;
+        window.addEventListener('scroll', function() {
+            if (!countersAnimated) {
+                let counters = document.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    let rect = counter.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        animateCounter(counter);
+                    }
+                });
+                countersAnimated = true;
+            }
+        });
+        
+        // Back to Top
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('.back-to-top').addClass('show');
+            } else {
+                $('.back-to-top').removeClass('show');
+            }
+        });
+        $('.back-to-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 500);
+            return false;
+        });
+    </script>
 </body>
 </html>
