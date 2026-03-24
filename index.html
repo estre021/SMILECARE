@@ -18,9 +18,6 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
     <!-- Template Stylesheet -->
     <link href="styles.css" rel="stylesheet">
 </head>
@@ -34,36 +31,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
-    <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
-        <div class="container">
-            <div class="row gx-0 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Santo Domingo, República Dominicana</a>
-                        <a href="mailto:smilegarciagroup@gmail.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>smilegarciagroup@gmail.com</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex justify-content-end gap-3">
-                        <a class="text-primary" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="text-primary" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="text-primary" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="text-primary" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <div class="dropdown ms-3">
-                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> Español</small></a>
-                            <div class="dropdown-menu rounded">
-                                <a href="#" class="dropdown-item">Español</a>
-                                <a href="#" class="dropdown-item">English</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
 
     <!-- Navbar Start -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-3">
@@ -88,7 +55,7 @@
                                 <li><a href="#testimonials" class="dropdown-item">Testimonios</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link">Contacto</a></li>
                         <li class="nav-item ms-3">
                             <a href="#contact" class="btn btn-primary rounded-pill px-4">Agendar Cita</a>
                         </li>
@@ -99,7 +66,7 @@
                         <i class="fa fa-phone-alt fa-2x text-primary"></i>
                     </div>
                     <div>
-                        <span class="small text-muted">Ll ámanos</span>
+                        <span class="small text-muted">Llámanos</span>
                         <h6 class="mb-0"><a href="tel:+18095395340" class="text-dark">809-539-5340</a></h6>
                     </div>
                 </div>
@@ -109,18 +76,21 @@
     <!-- Navbar End -->
 
     <!-- Hero Start -->
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="container">
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-7">
                     <h5 class="text-primary text-uppercase mb-3 letter-spacing-2">Bienvenidos a Smile Care</h5>
-                    <h1 class="display-1 fw-bold mb-4">Odontología de <span class="text-primary">Excelencia</span></h1>
-                    <p class="lead mb-4">En Smile Care García Group, elevamos el estándar de la odontología moderna con tecnología de vanguardia, atención personalizada y los más altos estándares de calidad.</p>
+                    <h1 class="display-1 fw-bold mb-4">
+                        <span class="odontologia-text">Odontología de</span>
+                        <span class="excelencia-text"> Excelencia</span>
+                    </h1>
+                    <p class="lead mb-4 hero-paragraph">En Smile Care García Group, elevamos el estándar de la odontología moderna con tecnología de vanguardia, atención personalizada y los más altos estándares de calidad.</p>
                     <div class="d-flex gap-3">
-                        <a href="#about" class="btn btn-primary rounded-pill px-5 py-3">Conócenos</a>
-                        <a href="#contact" class="btn btn-outline-light rounded-pill px-5 py-3">Agendar Cita</a>
+                        <a href="#team" class="btn btn-primary rounded-pill px-5 py-3" onclick="return true;" style="z-index: 3;">Conócenos</a>
+                        <a href="#contact" class="btn btn-outline-light rounded-pill px-5 py-3" onclick="return true;" style="z-index: 3;">Agendar Cita</a>
                     </div>
-                </div>
+                    </div>
                 <div class="col-lg-5 d-none d-lg-block">
                     <div class="hero-img">
                         <img src="equipo.jpg" class="img-fluid rounded-4 shadow-lg" alt="Equipo Smile Care">
@@ -171,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary rounded-pill px-5 py-3 mt-4">Más Información</a>
+                    <a href="#service" class="btn btn-primary rounded-pill px-5 py-3 mt-4">Más Información</a>
                 </div>
             </div>
         </div>
@@ -184,26 +154,26 @@
             <div class="row g-4 text-center">
                 <div class="col-sm-6 col-lg-3">
                     <div class="counter-box p-4 bg-white rounded-4 shadow-sm">
-                        <h2 class="display-3 fw-bold text-primary counter" data-target="15">15</h2>
+                        <h2 class="display-3 fw-bold text-primary counter" data-target="15">0</h2>
                         <h5 class="mb-0">Años de Experiencia</h5>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="counter-box p-4 bg-white rounded-4 shadow-sm">
-                        <h2 class="display-3 fw-bold text-primary counter" data-target="5000">5000</h2>
+                        <h2 class="display-3 fw-bold text-primary counter" data-target="5000">0</h2>
                         <h5 class="mb-0">Sonrisas Transformadas</h5>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="counter-box p-4 bg-white rounded-4 shadow-sm">
-                        <h2 class="display-3 fw-bold text-primary counter" data-target="100">100</h2>
+                        <h2 class="display-3 fw-bold text-primary counter" data-target="100">0</h2>
                         <h5 class="mb-0">Atención Personalizada</h5>
                         <small>% Satisfacción</small>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="counter-box p-4 bg-white rounded-4 shadow-sm">
-                        <h2 class="display-3 fw-bold text-primary counter" data-target="24">24</h2>
+                        <h2 class="display-3 fw-bold text-primary counter" data-target="24">0</h2>
                         <h5 class="mb-0">Soporte Continuo</h5>
                         <small>Horas / 7 días</small>
                     </div>
@@ -213,62 +183,87 @@
     </div>
     <!-- Counters End -->
 
-    <!-- Service Start -->
-    <div class="container-fluid service py-5" id="service">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-                <h5 class="text-primary text-uppercase">Nuestros Servicios</h5>
-                <h1 class="display-4">Tratamientos Especializados</h1>
-                <p class="mt-3">Ofrecemos tratamientos de alta calidad con tecnología avanzada y los más altos estándares de excelencia odontológica.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
-                        <div class="service-icon mb-4">
-                            <i class="fas fa-teeth-open fa-3x text-primary"></i>
-                        </div>
-                        <h4>Ortodoncia</h4>
-                        <p class="mb-3">Corrección dental con técnicas modernas para lograr una sonrisa alineada y funcional.</p>
-                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Leer más</a>
+<!-- Service Start -->
+<div class="container-fluid service py-5" id="service">
+    <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+            <h5 class="text-primary text-uppercase">Nuestros Servicios</h5>
+            <h1 class="display-4">Tratamientos Especializados</h1>
+            <p class="mt-3">Ofrecemos tratamientos de alta calidad con tecnología avanzada y los más altos estándares de excelencia odontológica.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Ortodoncia -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-teeth-open fa-3x text-primary"></i>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
-                        <div class="service-icon mb-4">
-                            <i class="fas fa-tooth fa-3x text-primary"></i>
-                        </div>
-                        <h4>Endodoncia</h4>
-                        <p class="mb-3">Tratamiento de conductos con tecnología avanzada y mínima molestia.</p>
-                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Leer más</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
-                        <div class="service-icon mb-4">
-                            <i class="fas fa-teeth fa-3x text-primary"></i>
-                        </div>
-                        <h4>Periodoncia</h4>
-                        <p class="mb-3">Cuidado especializado de encías para prevenir y tratar enfermedades periodontales.</p>
-                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Leer más</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
-                        <div class="service-icon mb-4">
-                            <i class="fas fa-microscope fa-3x text-primary"></i>
-                        </div>
-                        <h4>Implantes Dentales</h4>
-                        <p class="mb-3">Soluciones permanentes para recuperar piezas dentales perdidas con total naturalidad.</p>
-                        <a href="#" class="btn btn-outline-primary rounded-pill px-4">Leer más</a>
+                    <h4>Ortodoncia</h4>
+                    <p class="mb-3">Corrección dental con técnicas modernas para lograr una sonrisa alineada y funcional.</p>
+                    <button onclick="toggleTexto(this, 'ortodoncia-texto')" class="btn btn-outline-primary rounded-pill px-4">Leer más</button>
+                    <div id="ortodoncia-texto" class="service-texto-completo" style="display: none; margin-top: 15px; text-align: left;">
+                        <p class="mt-3">La ortodoncia es la especialidad que se encarga de corregir la posición de los dientes y los maxilares para lograr una correcta funcionalidad y una estética facial armónica. Utilizamos técnicas modernas como brackets de última generación, ortodoncia invisible y sistemas de alineadores personalizados.</p>
+                        <p>El tratamiento no solo mejora tu sonrisa, sino que también previene problemas futuros como desgaste dental, enfermedades periodontales y trastornos de la articulación temporomandibular. El Dr. Gabriel García, especialista en ortodoncia, evalúa cada caso de manera individual para ofrecer el tratamiento más adecuado a tus necesidades.</p>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary rounded-pill px-5 py-3">Más Servicios</a>
+
+            <!-- Endodoncia -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-tooth fa-3x text-primary"></i>
+                    </div>
+                    <h4>Endodoncia</h4>
+                    <p class="mb-3">Tratamiento de conductos con tecnología avanzada y mínima molestia.</p>
+                    <button onclick="toggleTexto(this, 'endodoncia-texto')" class="btn btn-outline-primary rounded-pill px-4">Leer más</button>
+                    <div id="endodoncia-texto" class="service-texto-completo" style="display: none; margin-top: 15px; text-align: left;">
+                        <p class="mt-3">La endodoncia, comúnmente conocida como "tratamiento de conductos", es el procedimiento que elimina la pulpa dental infectada para salvar el diente natural. En Smile Care utilizamos tecnología de vanguardia como microscopio dental y limas rotatorias de última generación.</p>
+                        <p>Este procedimiento garantiza un tratamiento preciso, indoloro y con alta tasa de éxito. Evita la extracción del diente y alivia el dolor causado por infecciones profundas. Nuestro equipo garantiza máxima comodidad durante todo el proceso con técnicas avanzadas de anestesia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Periodoncia -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-teeth fa-3x text-primary"></i>
+                    </div>
+                    <h4>Periodoncia</h4>
+                    <p class="mb-3">Cuidado especializado de encías para prevenir y tratar enfermedades periodontales.</p>
+                    <button onclick="toggleTexto(this, 'periodoncia-texto')" class="btn btn-outline-primary rounded-pill px-4">Leer más</button>
+                    <div id="periodoncia-texto" class="service-texto-completo" style="display: none; margin-top: 15px; text-align: left;">
+                        <p class="mt-3">La periodoncia es la especialidad que previene, diagnostica y trata las enfermedades de las encías y las estructuras de soporte del diente. La gingivitis y la periodontitis son las principales afecciones que tratamos.</p>
+                        <p>Realizamos limpiezas profundas (raspado y alisado radicular), cirugías periodontales y mantenimiento regular para conservar tus encías sanas. El cuidado periodontal es fundamental para mantener tus dientes a largo plazo, ya que las enfermedades de las encías son la principal causa de pérdida dental en adultos.</p>
+                        <p>Además, tratamientos periodontales adecuados mejoran tu salud general, ya que existe relación directa entre enfermedades de las encías y problemas cardíacos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Implantes Dentales -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-microscope fa-3x text-primary"></i>
+                    </div>
+                    <h4>Implantes Dentales</h4>
+                    <p class="mb-3">Soluciones permanentes para recuperar piezas dentales perdidas con total naturalidad.</p>
+                    <button onclick="toggleTexto(this, 'implantes-texto')" class="btn btn-outline-primary rounded-pill px-4">Leer más</button>
+                    <div id="implantes-texto" class="service-texto-completo" style="display: none; margin-top: 15px; text-align: left;">
+                        <p class="mt-3">Los implantes dentales son la solución más avanzada y permanente para reemplazar dientes perdidos. Consisten en tornillos de titanio biocompatible que se insertan quirúrgicamente en el hueso maxilar, actuando como raíces artificiales sobre las que se colocan coronas que se ven y funcionan como dientes naturales.</p>
+                        <p>En Smile Care utilizamos implantes de la más alta calidad con garantía. El Dr. Aníbal García, especialista en implantología, realiza todo el procedimiento con técnicas mínimamente invasivas y tecnología 3D para planificar cada caso con precisión.</p>
+                        <p>Los implantes previenen la pérdida ósea, mantienen la estructura facial y devuelven la funcionalidad completa para masticar y sonreír con confianza.</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="text-center mt-5">
+            <a href="#why-us" class="btn btn-primary rounded-pill px-5 py-3">Más Servicios</a>
+        </div>
     </div>
-    <!-- Service End -->
+</div>
+<!-- Service End -->
 
     <!-- Team Start -->
     <div class="container-fluid team py-5 bg-light" id="team">
@@ -281,7 +276,7 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="team-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
-                        <img src="dr-anibal.jpg" class="img-fluid w-100 team-img" alt="Dr. Aníbal García" style="height: 450px; object-fit: cover; object-position: top;">
+                        <img src="dr-anibal2.jpg" class="img-fluid w-100 team-img" alt="Dr. Aníbal García" style="height: 450px; object-fit: cover; object-position: top;">
                         <div class="p-4 text-center">
                             <h3>Dr. Aníbal García</h3>
                             <p class="text-primary fw-bold">Director Médico · Rehabilitación Oral</p>
@@ -446,28 +441,47 @@
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex gap-3">
+                        <a href="https://wa.me/18095395340?text=Hola%20Smile%20Care%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" target="_blank" class="btn btn-success rounded-pill px-4 py-2">
+                            <i class="fab fa-whatsapp me-2"></i> WhatsApp
+                        </a>
+                        <a href="mailto:smilegarciagroup@gmail.com?subject=Cita%20Odontológica&body=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" class="btn btn-primary rounded-pill px-4 py-2">
+                            <i class="fas fa-envelope me-2"></i> Email
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-light p-4 rounded-4">
-                        <form>
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-12">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Tu Nombre">
+                                    <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Tu Nombre" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="email" class="form-control form-control-lg" placeholder="Tu Email">
+                                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Tu Email" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="tel" class="form-control form-control-lg" placeholder="Teléfono">
+                                    <input type="tel" class="form-control form-control-lg" id="telefono" placeholder="Teléfono" required>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+                                    <select class="form-select form-control-lg" id="servicio">
+                                        <option value="">Selecciona un servicio</option>
+                                        <option value="Ortodoncia">Ortodoncia</option>
+                                        <option value="Endodoncia">Endodoncia</option>
+                                        <option value="Periodoncia">Periodoncia</option>
+                                        <option value="Implantes Dentales">Implantes Dentales</option>
+                                        <option value="Consulta General">Consulta General</option>
+                                    </select>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3 rounded-pill">Enviar Solicitud</button>
+                                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Mensaje adicional"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill">Enviar Solicitud</button>
                                 </div>
                             </div>
                         </form>
+                        <div id="formMessage" class="mt-3 text-center" style="display: none;"></div>
                     </div>
                 </div>
             </div>
@@ -508,8 +522,8 @@
                     <h4 class="text-white mb-4">Newsletter</h4>
                     <p class="text-white-50">Suscríbete para recibir promociones y consejos de salud dental.</p>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Tu email">
-                        <button class="btn btn-primary">Suscribir</button>
+                        <input type="text" class="form-control" id="newsletterEmail" placeholder="Tu email">
+                        <button class="btn btn-primary" onclick="enviarNewsletter()">Suscribir</button>
                     </div>
                 </div>
             </div>
@@ -524,59 +538,9 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
+    <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script>
-        // Spinner
-        setTimeout(function() {
-            document.getElementById('spinner').classList.remove('show');
-        }, 500);
-        
-        // Counter Up
-        function animateCounter(element) {
-            let target = parseInt(element.getAttribute('data-target'));
-            let current = 0;
-            let increment = target / 50;
-            let timer = setInterval(function() {
-                current += increment;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                element.textContent = Math.floor(current);
-            }, 30);
-        }
-        
-        // Animar contadores al hacer scroll
-        let countersAnimated = false;
-        window.addEventListener('scroll', function() {
-            if (!countersAnimated) {
-                let counters = document.querySelectorAll('.counter');
-                counters.forEach(counter => {
-                    let rect = counter.getBoundingClientRect();
-                    if (rect.top < window.innerHeight - 100) {
-                        animateCounter(counter);
-                    }
-                });
-                countersAnimated = true;
-            }
-        });
-        
-        // Back to Top
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 300) {
-                $('.back-to-top').addClass('show');
-            } else {
-                $('.back-to-top').removeClass('show');
-            }
-        });
-        $('.back-to-top').click(function() {
-            $('html, body').animate({scrollTop: 0}, 500);
-            return false;
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
