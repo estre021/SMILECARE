@@ -16,18 +16,19 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
-    color: #171414;
+    color: #2c2c2c;
     background: #ffffff;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
-.letter-spacing-2 {
-    letter-spacing: 2px;
+a {
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .btn-primary {
@@ -51,18 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-primary:hover {
     background: var(--primary);
     color: #fff;
-    transform: translateY(-2px);
-}
-
-.btn-outline-light {
-    border: 2px solid #fff;
-    color: #fff;
-    background: transparent;
-}
-
-.btn-outline-light:hover {
-    background: #fff;
-    color: var(--primary);
     transform: translateY(-2px);
 }
 
@@ -161,63 +150,78 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/********** Hero **********/
-.hero {
-    background: linear-gradient(135deg, #0b3c3d 0%, #0fb9b1 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+/********** Hero / Carousel **********/
+.header-carousel {
     position: relative;
     overflow: hidden;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
+.header-carousel-item {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.header-carousel .carousel-caption {
+    position: relative;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-    background-size: cover;
-    opacity: 0.3;
+    padding: 100px 0;
 }
 
-.hero h1 {
-    font-size: 4.5rem;
+.header-carousel .carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: 800;
     line-height: 1.2;
 }
 
-.hero .lead {
-    font-size: 1.2rem;
-    opacity: 0.95;
+.header-carousel .carousel-caption p {
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
-.hero-img {
-    animation: float 3s ease-in-out infinite;
+.header-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
 }
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    transition: 0.3s;
 }
 
-@media (max-width: 992px) {
-    .hero h1 {
-        font-size: 2.8rem;
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .header-carousel .carousel-caption h1 {
+        font-size: 2.2rem;
     }
     
-    .hero .lead {
+    .header-carousel .carousel-caption p {
         font-size: 1rem;
     }
     
-    .hero {
-        min-height: auto;
-        padding: 100px 0;
+    .header-carousel .owl-nav {
+        display: none;
     }
 }
 
@@ -347,12 +351,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /********** Responsive **********/
 @media (max-width: 992px) {
-    .display-1 {
-        font-size: 3rem;
-    }
-    
-    .display-4 {
-        font-size: 2rem;
+    .header-carousel .carousel-caption h1 {
+        font-size: 2.5rem;
     }
     
     .team-img {
@@ -363,16 +363,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-    .display-1 {
-        font-size: 2.2rem;
+    .header-carousel-item {
+        min-height: auto;
+        padding: 80px 0;
     }
     
-    .display-4 {
-        font-size: 1.8rem;
-    }
-    
-    .hero .lead {
-        font-size: 0.95rem;
+    .carousel-caption {
+        padding: 50px 0 !important;
     }
     
     .counter-box {
