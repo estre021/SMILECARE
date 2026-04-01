@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0fb9b1;
-    --primary-dark: #0c9c95;
+    --primary: #394f8f;
+    --primary-dark: #2e3f72;
     --secondary: #1e3799;
     --light: #f7fafa;
     --dark: #0b3c3d;
@@ -25,6 +25,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
+.hero-title {
+    color: #faf7f7;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
 
 .letter-spacing-2 {
     letter-spacing: 2px;
@@ -39,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(15, 185, 177, 0.3);
+    box-shadow: 0 8px 20px rgba(57, 79, 143, 0.3);
 }
 
 .btn-outline-primary {
@@ -68,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 /* TEXTO DEL HERO - SOLO EL PÁRRAFO EN BLANCO */
 .hero .lead {
     color: #ffffff !important;
+    text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
 }
 
 .text-primary {
@@ -167,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /********** Hero **********/
 .hero {
-    background: linear-gradient(135deg, #0b3c3d 0%, #0fb9b1 100%);
+    background: linear-gradient(135deg, #394f8f 0%, #394f8f 70%, #ffffff 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -182,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
     background-size: cover;
     opacity: 0.3;
 }
@@ -190,11 +197,15 @@ h1, h2, h3, h4, h5, h6 {
 .hero h1 {
     font-size: 4.5rem;
     line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero .lead {
     font-size: 1.2rem;
     opacity: 0.95;
+    color: #ffffff !important;
+    text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-img {
@@ -259,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(15, 185, 177, 0.15);
+    box-shadow: 0 20px 40px rgba(57, 79, 143, 0.15);
 }
 
 .service-icon i {
@@ -429,7 +440,7 @@ html {
     border-color: var(--primary);
 }
 .excelencia-text {
-    color: var(--primary) !important; /* Azul turquesa */
+    color: #ffffff !important; /* Blanco para Excelencia */
     display: inline-block;
 }
 
